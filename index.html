@@ -4,23 +4,52 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title></title>
-    <meta name='description' content=''>
+    <title>WDD231 | Course Home Page</title>
+    <meta name='description' content='Home page for WDD231.'>
     <meta name='author' content='Lacey Sanabria'>
     <link rel='stylesheet' href='styles/normalize.css'>
-    <script src='scripts/' defer></script>
+    <link rel='stylesheet' href='styles/base.css'>
+    <link rel='stylesheet' href='styles/larger.css'>
+    <script src='scripts/navigation.js' defer></script>
     <script src='../scripts/getdates.js' defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-
+        <img src="images/home-icon.svg" alt="Site logo" width="1" height="1">
+        <span>Lacey Sanabria</span>
+        <button id="ham-btn" class="hamburger"></button>
     </header>
+    <nav id='nav-bar' class='navigation'>
+        <ul>
+            <li class='current'><a href='#'>Home</a></li>
+            <li><a href='#'>Chamber</a></li>
+            <li><a href='#'>Final</a></li>
+        </ul>
+    </nav>
     <main>
-
+        <h1>Home</h1>
+        <section>
+            <h2></h2>
+        </section>
+        <section>
+            <h2></h2>
+        </section>
+        <section>
+            <h2></h2>
+        </section>
     </main>
     <footer>
-        <p>©️ <span id='currentYear'></span> | Lacey Sanabria</p>
+        <div class="social">
+            <a href="https://teams.microsoft.com/l/channel/19%3AKXmvkh0_7SWqmTvhrY4jYNzNhfaAQzwdiOWzV46NJ1c1%40thread.tacv2/General%20Questions%20-%20Week%201?groupId=34e8ea69-7c51-424e-8e73-153093bacad8" target="_blank"><img src="images/microsoft-teams.svg" alt="Microsoft Teams" width="16" height="16"></a>
+            <a href="https://github.com/LaceySana" target="_blank"><img src="images/github.svg" alt="GitHub" width="16" height="16"></a>
+            <a href="www.linkedin.com/in/lacey-sanabria" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+        </div>
+        <p>©️ <span id='currentYear'></span> | Lacey Sanabria | Utah</p>
         <p id='lastModified'></p>
     </footer>
 </body>
