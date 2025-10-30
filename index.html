@@ -10,8 +10,9 @@
     <link rel='stylesheet' href='styles/normalize.css'>
     <link rel='stylesheet' href='styles/base.css'>
     <link rel='stylesheet' href='styles/larger.css'>
-    <script src='scripts/navigation.js' defer></script>
     <script src='../scripts/getdates.js' defer></script>
+    <script src='scripts/navigation.js' defer></script>
+    <script src='scripts/course.js' defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
@@ -26,21 +27,34 @@
     <nav id='nav-bar' class='navigation'>
         <ul>
             <li class='current'><a href='#'>Home</a></li>
-            <li><a href='#'>Chamber</a></li>
-            <li><a href='#'>Final</a></li>
+            <li><a href='#'>Chamber Project</a></li>
+            <li><a href='#'>Final Project</a></li>
         </ul>
     </nav>
     <main>
         <h1>Home</h1>
-        <section>
-            <h2></h2>
-        </section>
-        <section>
-            <h2></h2>
-        </section>
-        <section>
-            <h2></h2>
-        </section>
+        <div id="main-div">
+            <section>
+                <h2>About Me</h2>
+                <p>My name is Lacey, I live in Vernal, Utah. I am very excited to be completing my first certificate and starting my second. I enjoy creating, but I think more logically than creatively. I think that's why I love programming. Its a very logical way to create really cool things. I also enjoy singing, puzzle games, video games, and learning. I am also really hoping to learn to manage my time better, and be more responsible and reliable, during this course.</p>
+            </section>
+            <section>
+                <h2>Student Photo</h2>
+                <img id="profile-image" src="images/profile.webp" alt="Portrait image of Lacey Sanabria.">
+            </section>
+            <section class="course-section">
+                <h2>Web Certificate Courses</h2>
+                <div id="filters" class="course-filter">
+                    <button type="button" id="all-courses" class="filter-by">All Courses</button>
+                    <button type="button" id="wdd" class="filter-by">WDD Courses</button>
+                    <button type="button" id="cse" class="filter-by">CSE Courses</button>
+                </div>
+                <p>The total credits for the courses listed below are <span id="credits"></span> </p>
+                <div id="course-list">
+
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="social">

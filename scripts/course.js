@@ -76,4 +76,32 @@ const courses = [
         ],
         completed: false
     }
-]
+];
+
+const wddCourses = courses.filter(course => course.subject === "WDD");
+
+const cseCourses = courses.filter(course => course.subject === "CSE");
+
+const courseSection = document.querySelector("#course-list");
+const filterCourse = document.querySelector("#filters");
+const creditsListed = document.querySelector("#credits");
+
+
+const displayCourses = course => `<span class="course ${course.completed === true ? "complete" : ""}">${course.subject} ${course.number}</span>`;
+
+courseSection.innerHTML = courses.map(displayCourses).join("");
+creditsListed.textContent = courses.reduce((accumulator, course) => accumulator + course.credits, 0);
+
+
+filterCourse.addEventListener("click", (e) => {
+    if (e.target.id === "wdd") {
+        courseSection.innerHTML = wddCourses.map(displayCourses).join("");
+        creditsListed.textContent = wddCourses.reduce((accumulator, course) => accumulator + course.credits, 0);
+    } else if (e.target.id === "cse") {
+        courseSection.innerHTML = cseCourses.map(displayCourses).join("");
+        creditsListed.textContent = cseCourses.reduce((accumulator, course) => accumulator + course.credits, 0);
+    } else {
+        courseSection.innerHTML = courses.map(displayCourses).join("");
+        creditsListed.textContent = courses.reduce((accumulator, course) => accumulator + course.credits, 0);
+    }
+})

@@ -25,4 +25,13 @@
     .navigation a {
         border: none;
     }
+
+    #main-div {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .course-section {
+        grid-column: 1 / 3;
+    }
+
 }

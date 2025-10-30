@@ -1,14 +1,18 @@
 :root {
     --primary-color: #0c7474;
-    --secondary-color: #98FFD9;
-    --accent-color-light: #FFE3E3;
-    --accent-color-med: #4C4C4C;
+    --secondary-color: #FFE3E3;
+    --accent-color-light: #e7fbf4;
+    --text-color: #4C4C4C;
 }
 
 /* || SITE WIDE || */
 * {
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
+}
+
+body {
+    color: var(--text-color);
 }
 
 /* || HEADER || */
@@ -37,7 +41,7 @@ header span {
 .hamburger {
     background: none;
     border: none;
-    color: var(--accent-color-med);
+    color: var(--text-color);
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -70,16 +74,16 @@ header span {
     display: block;
     padding: .8rem 10px;
     text-decoration: none;
-    color: var(--accent-color-med);
+    color: var(--text-color);
     border-bottom: solid 1px #ddd;
 }
 
 .navigation li.current {
-    background-color: var(--accent-color-light);
+    background-color: var(--secondary-color);
 }
 
 .navigation a:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color-light);
 }
 
 
@@ -89,10 +93,94 @@ h1 {
     color: var(--primary-color);
 }
 
+
+/* || SECTIONS || */
+
+#main-div {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-div section {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 100%;
+}
+
+section > * {
+    margin: 1rem;
+}
+
+section h2 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 0;
+    padding: .5rem;
+}
+
+#profile-image {
+    width: 150px;
+    height: auto;
+    border: var(--text-color) solid 2px;
+    border-radius: 8px;
+    display: block;
+    justify-self: center;
+    align-self: center;
+}
+
+/* || WEB CERTIFICATE COURSES || */
+
+.course-filter {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.filter-by {
+    border: var(--text-color) solid 1px;
+    border-radius: 10px;
+    background-color: var(--accent-color-light);
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.course-section p {
+    text-align: center;
+}
+
+#course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: .5rem .2rem;
+}
+
+.course {
+    border: var(--text-color) solid 1px;
+    border-radius: 10px;
+    background-color: var(--accent-color-light);
+    padding: .5rem;
+}
+
+.course.complete {
+    background-color: var(--primary-color);
+    color: var(--accent-color-light);
+}
+
+.course.complete::before {
+    content: "✔ ";
+    color: var(--secondary-color);
+    text-shadow: var(--text-color) 2px 3px;
+}
+
 /* || FOOTER || */
 
 footer {
-    background-color: var(--accent-color-light);
+    background-color: var(--secondary-color);
     padding: 1rem 10px;
     text-align: center;
 }
@@ -110,7 +198,7 @@ footer {
     height: 44px;
     justify-content: center;
     align-items: center;
-    border: var(--accent-color-med) solid 1px;
+    border: var(--text-color) solid 1px;
     border-radius: 4px;
 }
 
@@ -120,5 +208,5 @@ footer {
 }
 
 .social a:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color-light);
 }
