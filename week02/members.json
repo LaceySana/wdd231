@@ -1,0 +1,23 @@
+{
+    "family_name": "Ward",
+    "move_in_date": "11/04/25",
+    "number_of_people": 3,
+    "visited_by_bishopric": false,
+    "family_members": [
+        {
+            "name": "Trennan",
+            "gender": "male",
+            "birthdate": "04/08/2004"
+        },
+        {
+            "name": "Lacey",
+            "gender": "female",
+            "birthdate": "09/12/2003"
+        },
+        {
+            "name": "Coquito",
+            "gender": "male",
+            "birthdate": "01/15/2021"
+        }
+    ]
+}
