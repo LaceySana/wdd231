@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #ccb994;
+    --secondary-color: #042500;
+    --accent-color-1: #555;
+    --accent-color-2: #bbb;
+    --body-font: "Roboto", sans-serif;
+    --heading-font: "Domine", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+}
+
+header, footer {
+    background-color: var(--primary-color);
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+}
+
+header {
+    padding: 0 75px;
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom: var(--secondary-color) solid 1px;
+}
+
+/* || HAMBURGER BUTTON || */
+
+.hamburger {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.open::before {
+    content: "\00D7";
+}
+
+/* || NAVIGATION || */
+
+.navigation {
+    display: none;
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: right;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-top: var(--secondary-color) solid 1px;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.current {
+    text-shadow: 0 0 5px #555;
+}
+
+/* || FOOTER || */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 75px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    padding: .2rem;
+}
+
+#social {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin: auto;
+}

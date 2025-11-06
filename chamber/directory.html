@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vernal Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="description"
+        content="Discover the city of Vernal, Utah. See local weather, upcoming events, and business snapshots all in one place!">
+    <meta name="author" content="Lacey Sanabria">
+    <meta property="og:title" content="Vernal Chamber of Commerce">
+    <meta property="og:description"
+        content="Discover the city of Vernal, Utah. See local weather, upcoming events, and business snapshots all in one place!">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://laceysana.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="https://placehold.co/50" alt="">
+        <h1>Vernal Chamber of Commerce</h1>
+        <button id="ham-btn" class="hamburger"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="current"><a href='directory.html'>Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <div id="contact">
+            <p><strong>Vernal Chamber of Commerce</strong></p>
+            <p>5678 s Hwy 40<br>Vernal, UT 84078</p>
+            <p>info@vernalcc.org</p>
+            <p>(435) 111-2340</p>
+        </div>
+        <div id="social">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="Link to Facebook." width="30"></a>
+            <a href="https://www.linkedin.com/in/lacey-sanabria" target="_blank"><img src="images/linkedin.svg" alt="Link to LinkedIn." width="30"></a>
+            <a href="https://github.com/LaceySana" target="_blank"><img src="images/github.svg" alt="Link to GitHub." width="30"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Lacey Sanabria</p>
+            <p> © <span id="currentYear"></span> Vernal Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
