@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Mailbox Express, Inc.",
+            "address": "332 W Main St, Vernal, UT 84078",
+            "phoneNumber": "435-789-0766",
+            "url": "https://shipmailbox.com",
+            "image": "mailbox-express.png",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Rural Utah Child Development",
+            "address": "155 S 100 W, Vernal, UT 84078",
+            "phoneNumber": "800-841-2867",
+            "url": "https://www.rucd.org/schools/vernal/",
+            "image": "rural-ut-child-dev.png",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Jiffy Enterprises, Inc.",
+            "address": "630 W Main St, Vernal, UT 84078",
+            "phoneNumber": "435-789-4394",
+            "url": "https://www.google.com/url?sa=t&source=web&rct=j&url=http://www.jiffyenterprises.com/&ved=2ahUKEwjR9q2gmt6QAxXHLTQIHWotOGsQ_Bd6BAggEAI&opi=89978449&usg=AOvVaw3xDEX_1xipIf7v2yxBUYN9",
+            "image": "jiffy-ent.png",
+            "membershipLevel": 1
+        },
+        {
+            "name": "KODA Resources",
+            "address": "1368 1200 E St, Naples, UT 84078",
+            "phoneNumber": null,
+            "url": "https://www.kodaresources.com",
+            "image": "koda.jpg",
+            "membershipLevel": 2
+        },
+        {
+            "name": "Utah State University - Uintah Basin Regional Campus",
+            "address": "320 Aggie Blvd, Vernal, UT 84078",
+            "phoneNumber": "435-722-1700",
+            "url": "http://uintahbasin.usu.edu/",
+            "image": "usu.jpg",
+            "membershipLevel": 3
+        },
+        {
+            "name": "M & D Management/Copy Stop",
+            "address": "36 W 100 S, Vernal, UT 84078",
+            "phoneNumber": "435-789-8275",
+            "url": "https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.copyshopvernalut.com/&ved=2ahUKEwiM-OrXm96QAxUPyOYEHW3SLa8Q_Bd6BAgjEAI&opi=89978449&usg=AOvVaw2zfgMf2iHpFb2d9V1b_OJN",
+            "image": "copy-shop.jpg",
+            "membershipLevel": 1
+        },
+        {
+            "name": "Davis Food & Drug",
+            "address": "575 W Main St, Vernal, UT 84078",
+            "phoneNumber": "435-789-2001",
+            "url": "https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.davisfoodanddrug.com/&ved=2ahUKEwij0vb6m96QAxVMFjQIHTCPHagQ_Bd6BAgwEAI&opi=89978449&usg=AOvVaw2w25eY3yHkNLl9zNpVPYGn",
+            "image": "davis.jpg",
+            "membershipLevel": 3
+        }
+    ]
+}

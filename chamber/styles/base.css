@@ -1,7 +1,7 @@
 :root {
     --primary-color: #ccb994;
     --secondary-color: #042500;
-    --accent-color-1: #555;
+    --accent-color-1: #a57939;
     --accent-color-2: #bbb;
     --body-font: "Roboto", sans-serif;
     --heading-font: "Domine", serif;
@@ -89,6 +89,37 @@ header {
 
 .current {
     text-shadow: 0 0 5px #555;
+}
+
+/* || DIRECTORY || */
+
+main {
+    text-align: center;
+}
+
+.button-div {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    margin: 1rem 1rem 2rem;
+}
+
+.view-swap {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: .5rem 1rem;
+    border: var(--accent-color-1) solid 2px;
+    border-radius: 10px;
+}
+
+#members.grid {
+    display: grid;
+    /* add styling for grid view */
+}
+
+#members.list {
+    border: #555 solid 1px;
+    /* add styling for list view */
 }
 
 /* || FOOTER || */
