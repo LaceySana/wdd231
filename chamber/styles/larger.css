@@ -24,6 +24,18 @@
         padding: .5rem 3rem;
     }
 
+    #members.grid {
+        gap: 2rem;
+    }
+
+    #members.list {
+        margin: 2rem;
+    }
+
+    #members.list section {
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+    }
+
     footer {
         flex-direction: row;
     }

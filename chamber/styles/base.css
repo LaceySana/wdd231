@@ -2,7 +2,7 @@
     --primary-color: #ccb994;
     --secondary-color: #042500;
     --accent-color-1: #a57939;
-    --accent-color-2: #bbb;
+    --accent-color-2: #0425001a;
     --body-font: "Roboto", sans-serif;
     --heading-font: "Domine", serif;
 }
@@ -71,7 +71,6 @@ header {
     flex-direction: column;
     justify-content: space-around;
     list-style-type: none;
-    align-items: right;
 }
 
 .navigation a {
@@ -114,12 +113,47 @@ main {
 
 #members.grid {
     display: grid;
-    /* add styling for grid view */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 2rem;
+    justify-content: center;
+}
+
+#members.grid section {
+    border: #ccc solid 1px;
+    box-shadow: 0 7px 10px #333;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+}
+
+#members.grid section img {
+    margin: .5rem;
 }
 
 #members.list {
-    border: #555 solid 1px;
-    /* add styling for list view */
+    margin: .5rem;
+}
+
+#members.list section {
+    border: #ddd solid 1px;
+    display: grid;
+    grid-template-columns: 1fr;
+    flex: 0 0 1;
+    text-align: left;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#members.list section:nth-child(odd) {
+    background-color: var(--accent-color-2);
+}
+
+#members.list section img {
+    display: none;
 }
 
 /* || FOOTER || */
