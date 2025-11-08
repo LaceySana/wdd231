@@ -142,7 +142,6 @@ main {
     border: #ddd solid 1px;
     display: grid;
     grid-template-columns: 1fr;
-    flex: 0 0 1;
     text-align: left;
     padding: 1rem;
     gap: 1rem;
