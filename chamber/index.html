@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vernal City CoC - Member Directory</title>
+    <title>Vernal City CoC - Home Page</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <meta name="description"
-        content="Discover Vernal's local businesses. View snapshots with essential information of all your go-to companies.">
+        content="Discover Vernal, Utah. See exciting upcoming events, current local weather, and top businesses all in one place!">
     <meta name="author" content="Lacey Sanabria">
-    <meta property="og:title" content="Vernal City CoC - Member Directory">
+    <meta property="og:title" content="Vernal City CoC - Home Page">
     <meta property="og:description"
-        content="Discover Vernal's local businesses. View snapshots with essential information of all your go-to companies.">
+        content="Discover Vernal, Utah. See exciting upcoming events, current local weather, and top businesses all in one place!">
     <meta property="og:image" content="https://laceysana.github.io/wdd231/chamber/images/directory-ss.PNG">
     <meta property="og:url" content="https://laceysana.github.io/wdd231/chamber/directory.html">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <!-- <script src="scripts/directory.js" defer></script> -->
     <script src="scripts/navigation.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,19 +33,43 @@
         <button id="ham-btn" class="hamburger" title="Toggle navigation"></button>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="current"><a href='directory.html'>Directory</a></li>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href='directory.html'>Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="button-div">
-            <button id="grid-btn" class="view-swap" title="Grid View">Grid View</button>
-            <button id="list-btn" class="view-swap" title="List View">List View</button>
+        <div class="hero">
+            <img src="images/vernal-landscape.webp" alt="">
+            <article class="keynote">
+                <p>Want to join Vernal's Chamber of Commerce?</p>
+                <a href="join.html">Join Today!</a>
+            </article>
         </div>
-        <div id="members" class="grid"></div>
+        <h1>Home</h1>
+        <section class="quick-look">
+            <article>
+                <h2>Events</h2>
+                <section></section>
+            </article>
+            <article>
+                <h2>Current Weather</h2>
+                <section id="current-weather">
+                    <img src="" alt="" id="weather-icon">
+                    <!-- <p><span id="current-temp"></span><br>
+                        <span id="weather-desc"></span><br>
+                        High: <span id="current-high"></span><br>
+                    </p> -->
+                </section>
+            </article>
+            <article>
+                <h2>Weather Forecast</h2>
+                <section id="weather-forecast"></section>
+            </article>
+        </section>
+        <section></section>
     </main>
     <footer>
         <div id="contact">
