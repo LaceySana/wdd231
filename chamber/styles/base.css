@@ -183,7 +183,7 @@ header {
     bottom: 20px;
     padding: 1.5rem;
     margin: auto;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color-2);
     border: var(--secondary-color) solid 3px;
     border-radius: 10px;
     text-align: center;

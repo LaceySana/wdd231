@@ -20,6 +20,8 @@ async function apiFetch() {
     }
 }
 
+// -> Fetch from other link for forecast !!
+
 apiFetch();
 
 function displayResults(data) {
@@ -27,12 +29,12 @@ function displayResults(data) {
     const weatherDesc = data.weather[0].description;
     const p = document.createElement("p");
     
-    const toTime = (secs) => new Date(secs * 1000).toISOString().slice(11, 16);
+    const toTime = (secs) => (new Date(secs * 1000)).toLocaleTimeString("en-US", {timeZone: "America/Denver", hour: "2-digit", minute: "2-digit", hour12: true});
     
-    p.innerHTML = `<strong>${data.main.temp}</strong>&degF
+    p.innerHTML = `<strong>${Math.round(data.main.temp)}</strong>&degF
     <br>${weatherDesc}
-    <br>High: ${data.main.temp_max}&degF
-    <br>Low: ${data.main.temp_min}&degF
+    <br>High: ${Math.round(data.main.temp_max)}&degF
+    <br>Low: ${Math.round(data.main.temp_min)}&degF
     <br>Humidity: ${data.main.humidity}%
     <br>Sunrise: ${toTime(data.sys.sunrise)}
     <br>Sunset: ${toTime(data.sys.sunset)}`;
