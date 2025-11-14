@@ -2,10 +2,13 @@ const currentWeather = document.querySelector("#current-weather");
 const weatherIcon = document.querySelector("#weather-icon");
 const weatherForecast = document.querySelector("#weather-forecast");
 
-const url = "https://api.openweathermap.org/data/2.5/weather?lat=40.45&lon=-109.53&units=imperial&appid=4f4f80781538491f0a87ccabd7cb1af2";
+const currentUrl = "https://api.openweathermap.org/data/2.5/weather?lat=40.45&lon=-109.53&units=imperial&appid=4f4f80781538491f0a87ccabd7cb1af2";
 const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=40.45&lon=-109.53&units=imperial&appid=4f4f80781538491f0a87ccabd7cb1af2";
 
-async function apiFetch() {
+apiFetch(currentUrl, displayCurrent);
+apiFetch(forecastUrl, displayForecast);
+
+async function apiFetch(url, displayResults) {
     try {
         const response = await fetch(url);
         
@@ -20,11 +23,8 @@ async function apiFetch() {
     }
 }
 
-// -> Fetch from other link for forecast !!
 
-apiFetch();
-
-function displayResults(data) {
+function displayCurrent(data) {
     const iconurl = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     const weatherDesc = data.weather[0].description;
     const p = document.createElement("p");
@@ -43,6 +43,20 @@ function displayResults(data) {
     weatherIcon.setAttribute("src", iconurl);
     weatherIcon.setAttribute("alt", weatherDesc);
     currentWeather.appendChild(p);
+}
 
+function displayForecast(data) {
+    const p = document.createElement("p");
 
+    // Future enhancement- loop through data, looking at 1 day at a time and find real high and low estimated for each day in given data
+
+    const roundHigh = (index) => Math.round(data.list[index].main.temp_max)
+    const roundLow = (index) => Math.round(data.list[index].main.temp_min)
+    const getDay = (index) => new Intl.DateTimeFormat("en-US", { weekday: "long" }).format(new Date(data.list[index].dt_txt))
+
+    p.innerHTML = `Today: <strong>${roundHigh(0)}&deg <span class="low-temp">${roundLow(0)}&deg</span>F</strong>
+    <br><br>${getDay(8)}: <strong>${roundHigh(8)}&deg <span class="low-temp">${roundLow(8)}&deg</span>F</strong>
+    <br><br>${getDay(16)}: <strong>${roundHigh(16)}&deg <span class="low-temp">${roundLow(16)}&deg</span>F</strong>`;
+
+    weatherForecast.appendChild(p);
 }

@@ -2,7 +2,7 @@
     --primary-color: #ccb994;
     --secondary-color: #042500;
     --accent-color-1: #a57939;
-    --accent-color-2: #e5e9e5;
+    --accent-color-2: #EEDECC;
     --body-font: "Roboto", sans-serif;
     --heading-font: "Domine", serif;
 }
@@ -219,6 +219,10 @@ header {
     float: left;
 }
 
+.low-temp {
+    color: #466A42;
+    font-size: 85%;
+}
 
 
 /* || FOOTER || */
