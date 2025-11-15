@@ -63,12 +63,11 @@ const displaySpotlights = (members) => {
     
     randComp.forEach(member => {
         let article = document.createElement("article");
-        let h2 = document.createElement("h2");
         let h3 = document.createElement("h3");
         let img = document.createElement("img");
         let details = document.createElement("p");
 
-        h2.textContent = member.name;
+        h3.textContent = member.name;
         img.setAttribute("src", `images/${member.image}`);
         img.setAttribute("alt", `${member.name} logo`);
         img.setAttribute("width", "100px");
@@ -79,7 +78,7 @@ const displaySpotlights = (members) => {
         <strong>Membership Level: </strong>${member.membershipLevel}`
 
 
-        article.appendChild(h2);
+        article.appendChild(h3);
         article.appendChild(img);
         article.appendChild(details);
 
