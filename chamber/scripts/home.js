@@ -1,3 +1,3 @@
-import { getMemberData, displaySpotlights } from "./directory.js";
+import { getMemberData, displaySpotlights } from "./members.mjs";
 
 getMemberData(displaySpotlights);

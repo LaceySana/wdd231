@@ -36,6 +36,14 @@
         grid-template-columns: 1fr 1fr 1fr 2fr;
     }
 
+    .quick-look {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    #spotlights {
+        flex-direction: row;
+    }
+
     footer {
         flex-direction: row;
     }
