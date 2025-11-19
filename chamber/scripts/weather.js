@@ -1,5 +1,4 @@
 const currentWeather = document.querySelector("#current-weather");
-const weatherIcon = document.querySelector("#weather-icon");
 const weatherForecast = document.querySelector("#weather-forecast");
 
 const currentUrl = "https://api.openweathermap.org/data/2.5/weather?lat=40.45&lon=-109.53&units=imperial&appid=4f4f80781538491f0a87ccabd7cb1af2";
@@ -27,6 +26,7 @@ async function apiFetch(url, displayResults) {
 function displayCurrent(data) {
     const iconurl = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     const weatherDesc = data.weather[0].description;
+    const icon = document.createElement("img");
     const p = document.createElement("p");
     
     const toTime = (secs) => (new Date(secs * 1000)).toLocaleTimeString("en-US", {timeZone: "America/Denver", hour: "2-digit", minute: "2-digit", hour12: true});
@@ -40,8 +40,9 @@ function displayCurrent(data) {
     <br>Sunset: ${toTime(data.sys.sunset)}`;
 
 
-    weatherIcon.setAttribute("src", iconurl);
-    weatherIcon.setAttribute("alt", weatherDesc);
+    icon.setAttribute("src", iconurl);
+    icon.setAttribute("alt", weatherDesc);
+    currentWeather.appendChild(icon);
     currentWeather.appendChild(p);
 }
 

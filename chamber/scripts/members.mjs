@@ -56,7 +56,6 @@ const displaySpotlights = (members) => {
         let randInt = Math.floor(Math.random() * highLevel.length);
         while (randComp.includes(highLevel[randInt])) {
             randInt = Math.floor(Math.random() * highLevel.length);
-            console.log(randInt, highLevel[randInt]);
         }
         randComp.push(highLevel[randInt]);
     }

@@ -190,7 +190,7 @@ header {
     max-width: 50vw;
 }
 
-.keynote a {
+ .keynote a {
     font-size: larger;
     font-weight: bold;
     color: var(--secondary-color);
@@ -204,17 +204,17 @@ header {
     gap: 1rem;
 }
 
-.quick-look article {
+.quick-look > article {
     background-color: var(--accent-color-2);
 }
 
-.quick-look article h2 {
+.quick-look > article > h2 {
     padding: 5px 10px;
     color: var(--primary-color);
     background-color: var(--secondary-color);
 }
 
-.quick-look article section {
+.quick-look> article > section {
     padding: 5px;
 }
 
@@ -235,7 +235,7 @@ header {
     gap: 1rem;
 }
 
-#spotlights article {
+#spotlights > article {
     background-color: var(--accent-color-2);
     border: var(--secondary-color) solid 2px;
     border-radius: 10px;
