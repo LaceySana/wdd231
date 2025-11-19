@@ -87,21 +87,49 @@ const filterCourse = document.querySelector("#filters");
 const creditsListed = document.querySelector("#credits");
 
 
-const displayCourses = course => `<span class="course ${course.completed === true ? "complete" : ""}">${course.subject} ${course.number}</span>`;
+function displayCourses(courses) {
+    courseSection.innerHTML = "";
+    courses.forEach(course => {
+        courseSection.innerHTML += `<span class="course ${course.completed === true ? "complete" : ""}">${course.subject} ${course.number}</span>`;
+        courseSection.addEventListener("click", () => displayCourseInfo(course));
+    });
+};
 
-courseSection.innerHTML = courses.map(displayCourses).join("");
-creditsListed.textContent = courses.reduce((accumulator, course) => accumulator + course.credits, 0);
+const getCreditsListed = courses => courses.reduce((accumulator, course) => accumulator + course.credits, 0);
+
+displayCourses(courses);
+creditsListed.textContent = getCreditsListed(courses);
 
 
 filterCourse.addEventListener("click", (e) => {
     if (e.target.id === "wdd") {
-        courseSection.innerHTML = wddCourses.map(displayCourses).join("");
-        creditsListed.textContent = wddCourses.reduce((accumulator, course) => accumulator + course.credits, 0);
+        displayCourses(wddCourses);
+        creditsListed.textContent = getCreditsListed(wddCourses);
     } else if (e.target.id === "cse") {
-        courseSection.innerHTML = cseCourses.map(displayCourses).join("");
-        creditsListed.textContent = cseCourses.reduce((accumulator, course) => accumulator + course.credits, 0);
+        displayCourses(cseCourses);
+        creditsListed.textContent = getCreditsListed(cseCourses);
     } else {
-        courseSection.innerHTML = courses.map(displayCourses).join("");
-        creditsListed.textContent = courses.reduce((accumulator, course) => accumulator + course.credits, 0);
+        displayCourses(courses);
+        creditsListed.textContent = getCreditsListed(courses);
     }
 })
+
+const courseDetails = document.querySelector("#course-details");
+
+function displayCourseInfo(course) {
+    courseDetails.innerHTML = "";
+    courseDetails.innerHTML = `
+    <button id="closeModal">✖</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>`;
+
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    })
+}

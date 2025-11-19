@@ -179,6 +179,31 @@ section h2 {
     text-shadow: var(--text-color) 2px 3px;
 }
 
+/* || DIALOG - COURSE INFO || */
+
+dialog {
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    background-color: var(--accent-color-light);
+    color: var(--text-color);
+    border: var(--text-color) solid 2px;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px var(--text-color);
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 1rem;
+    border: var(--text-color) solid 1px;
+}
+
 /* || FOOTER || */
 
 footer {
