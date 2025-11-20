@@ -73,7 +73,7 @@ const displaySpotlights = (members) => {
         details.innerHTML = 
         `<strong>Phone: </strong>${member.phoneNumber ? member.phoneNumber : "Unavailable"} <br>
         <strong>Address: </strong>${member.address ? member.address : "Unavailable"} <br>
-        <strong>URL: </strong>${member.url}
+        <strong>URL: </strong>${member.url.split("://")[1]}
         <strong>Membership Level: </strong>${member.membershipLevel}`
 
 

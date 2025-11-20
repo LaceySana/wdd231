@@ -208,13 +208,13 @@ header {
     background-color: var(--accent-color-2);
 }
 
-.quick-look > article > h2 {
+.quick-look > article > h3 {
     padding: 5px 10px;
     color: var(--primary-color);
     background-color: var(--secondary-color);
 }
 
-.quick-look> article > section {
+.quick-look > article > section {
     padding: 5px;
 }
 
