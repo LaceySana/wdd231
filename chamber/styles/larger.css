@@ -43,6 +43,11 @@
     #spotlights {
         flex-direction: row;
     }
+    
+    #join-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
     footer {
         flex-direction: row;

@@ -5,6 +5,7 @@
     --accent-color-2: #EEDECC;
     --body-font: "Roboto", sans-serif;
     --heading-font: "Domine", serif;
+    --circle: "../images/circle.svg";
 }
 
 * {
@@ -33,7 +34,9 @@ footer {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
     font-family: var(--heading-font);
     text-align: left;
 }
@@ -240,6 +243,92 @@ header {
     border: var(--secondary-color) solid 2px;
     border-radius: 10px;
     padding: 1rem;
+}
+
+
+/* || JOIN PAGE || */
+
+
+/* || FORM || */
+
+/* .form {
+    margin: auto;
+} */
+
+.form fieldset {
+    border: none;
+}
+
+.form fieldset * {
+    display: block;
+}
+
+.form legend {
+    font-size: xx-large;
+    font-family: var(--heading-font);
+}
+
+.form label {
+    margin: 5px 1rem;
+    font-weight: bold;
+}
+
+.form select {
+    margin-left: 1rem;
+}
+
+.form input {
+    padding: 3px;
+    width: 300px;
+    border: black solid 2px;
+    border-radius: 3px;
+}
+
+.form input:invalid {
+    border-left: firebrick 4px solid;
+}
+
+.form input:valid {
+    border-left: rgb(58, 119, 8) 4px solid;
+}
+
+.form input[type="submit"] {
+    padding: 8px;
+    margin: auto;
+    width: 200px;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 1px;
+    background-color: var(--primary-color);
+    border: var(--secondary-color) 3px solid;
+    border-radius: 5px;
+    outline: var(--accent-color-1) 2px solid;
+    outline-offset: 1px;
+}
+
+/* || LEVEL CARDS || */
+
+.member-level {
+    margin: 20px auto;
+    padding: 10px;
+    border: var(--accent-color-1) solid 5px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    
+    /* mask: url(../images/circle.svg) left / inherit no-repeat; */
+}
+
+.member-level * {
+    justify-self: center;
+}
+
+.member-level button {
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: var(--accent-color-1) inset 3px;
+    border-radius: 5px;
 }
 
 
