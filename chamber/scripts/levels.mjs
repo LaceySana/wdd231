@@ -20,9 +20,10 @@ function displayLevelCards(levels) {
     cards.innerHTML = "";
     cards.innerHTML = `<h2>Membership Levels</h2>`;
     levels.forEach(level => {
+        let lvlId = level.title.replace(" ", "") + "-div";
         let btnId = level.title.replace(" ", "") + "-info";
         cards.innerHTML += `
-        <section class="member-level">
+        <section class="member-level" id="${lvlId}">
             <h3>${level.title} Membership Level</h2>
             <button type="button" id="${btnId}">Learn More</button>
         </section>
@@ -37,10 +38,12 @@ function displayLevelCards(levels) {
 function displayLevelInfo(level) {
     const levelDetails = document.querySelector("#level-dialog");
 
+    const usdFormatter = new Intl.NumberFormat("en-US", { style: "currency", currency : "USD" })
+
     levelDetails.innerHTML = `
     <button id="closeModal">✖</button>
     <h2>${level.title}</h2>
-    <p><strong>Cost: </strong>${level.cost}</p>
+    <p><strong>Cost: </strong>${usdFormatter.format(level.cost)}</p>
     <p><strong>Benefits: </strong></p>
     <ul id="benefit-list"></ul>
     `;

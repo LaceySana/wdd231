@@ -312,6 +312,15 @@ header {
 
 /* || LEVEL CARDS || */
 
+@keyframes slide-on-screen {
+    from {
+        transform: translateX(150%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
 .member-level {
     margin: 20px auto;
     padding: 10px;
@@ -319,8 +328,30 @@ header {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     text-align: center;
+    /* transform: translateX(150%); */
+
     
     /* mask: url(../images/circle.svg) left / inherit no-repeat; */
+}
+
+#NonProfit-div {
+    animation: slide-on-screen 2s linear 0s 1;
+
+}
+
+#Bronze-div {
+    animation: slide-on-screen 2.5s linear 0s 1;
+    
+}
+
+#Silver-div {
+    animation: slide-on-screen 3s linear 0s 1;
+    
+}
+
+#Gold-div {
+    animation: slide-on-screen 3.5s linear 0s 1;
+    
 }
 
 .member-level * {
@@ -343,13 +374,15 @@ header {
 
 #level-dialog {
     width: 500px;
-    height: 300px;
+    height: min-content;
     padding: 3rem;
     margin: auto;
-    border: var(--secondary-color) solid 2px;
+    border: var(--secondary-color) solid 5px;
     border-radius: 20px;
     background-color: var(--accent-color-2);
     color: var(--secondary-color);
+    outline: var(--accent-color-1) solid 3px;
+    outline-offset: -10px;
 }
 
 #level-dialog * {
