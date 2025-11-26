@@ -1,0 +1,36 @@
+[
+    {
+        "title" : "Non Profit",
+        "cost" : 0,
+        "benefits" : [
+            "Events"
+        ]
+    },
+    {
+        "title" : "Bronze",
+        "cost" : 1500,
+        "benefits" : [
+            "Events",
+            "Training"
+        ]
+    },
+    {
+        "title" : "Silver",
+        "cost" : 6500,
+        "benefits" : [
+            "Events",
+            "Training",
+            "Spotlight"
+        ]
+    },
+    {
+        "title" : "Gold",
+        "cost" : 10000,
+        "benefits" : [
+            "Events",
+            "Training",
+            "Spotlight",
+            "Event Discounts"
+        ]
+    }
+]

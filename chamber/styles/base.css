@@ -292,10 +292,14 @@ header {
     border-left: rgb(58, 119, 8) 4px solid;
 }
 
+.form textarea {
+    width: 300px;
+}
+
 .form input[type="submit"] {
     padding: 8px;
-    margin: auto;
-    width: 200px;
+    margin: auto calc(75px + 2rem);
+    width: 150px;
     font-weight: bold;
     font-size: large;
     letter-spacing: 1px;
@@ -331,6 +335,38 @@ header {
     border-radius: 5px;
 }
 
+/* || LEVELS DIALOG || */
+
+#level-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 70%);
+}
+
+#level-dialog {
+    width: 500px;
+    height: 300px;
+    padding: 3rem;
+    margin: auto;
+    border: var(--secondary-color) solid 2px;
+    border-radius: 20px;
+    background-color: var(--accent-color-2);
+    color: var(--secondary-color);
+}
+
+#level-dialog * {
+    margin: 1rem auto;
+}
+
+#level-dialog li {
+    list-style-type: circle;
+    margin-left: 2rem;
+}
+
+#level-dialog button {
+    float: right;
+    font-size: x-large;
+    border: none;
+    background-color: inherit;
+}
 
 /* || FOOTER || */
 
