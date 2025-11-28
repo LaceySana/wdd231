@@ -248,12 +248,19 @@ header {
 
 /* || JOIN PAGE || */
 
+#join-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
 /* || FORM || */
 
-/* .form {
-    margin: auto;
-} */
+.form {
+    width: auto;
+    max-width: calc(300px + 4rem);
+    flex: 1 1 0;
+}
 
 .form fieldset {
     border: none;
@@ -279,7 +286,8 @@ header {
 
 .form input {
     padding: 3px;
-    width: 300px;
+    width: 100%;
+    max-width: 350px;
     border: black solid 2px;
     border-radius: 3px;
 }
@@ -293,13 +301,15 @@ header {
 }
 
 .form textarea {
-    width: 300px;
+    width: 100%;
+    max-width: 350px;
 }
 
 .form input[type="submit"] {
     padding: 8px;
-    margin: auto calc(75px + 2rem);
+    margin: auto calc(50% - 75px);
     width: 150px;
+    min-width: 150px;
     font-weight: bold;
     font-size: large;
     letter-spacing: 1px;
@@ -310,7 +320,18 @@ header {
     outline-offset: 1px;
 }
 
+#results {
+    border: var(--secondary-color) solid 2px;
+    border-radius: 10px;
+    padding: 1rem;
+    line-height: 2rem;
+}
+
 /* || LEVEL CARDS || */
+
+#level-info {
+    flex: 1 1 0;
+}
 
 @keyframes slide-on-screen {
     from {
@@ -328,15 +349,11 @@ header {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     text-align: center;
-    /* transform: translateX(150%); */
-
-    
-    /* mask: url(../images/circle.svg) left / inherit no-repeat; */
 }
 
 #NonProfit-div {
     animation: slide-on-screen 2s linear 0s 1;
-
+    
 }
 
 #Bronze-div {
