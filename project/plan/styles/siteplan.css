@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #DDD4CB;
+    --accent-color-1: #000D46;
+    --accent-color-2: #ACB6C4;
+    --font-updock: "Updock", cursive;
+    --font-milonga: "Milonga", serif;
+    --font-tapestry: "Tapestry", serif;
+}
+
+body {
+    font-family: var(--font-milonga);
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+}
+
+main {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 2rem;
+    line-height: 175%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-tapestry);
+    text-decoration-line: underline overline;
+    text-decoration-color: var(--primary-color);
+    text-decoration-skip-ink: none;
+}
+
+li {
+    list-style-type: "♪ ";
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.updock {
+    font-family: var(--font-updock);
+}
+
+.milonga {
+    font-family: var(--font-milonga);
+}
+
+.tapestry {
+    font-family: var(--font-tapestry);
+}
+
+.large {
+    font-size: xx-large;
+}
+
+.color-prev {
+    /* content: "⬛"; */
+    outline: #000 solid 2px;
+}
+
+.prim-color {
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.sec-color {
+    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+
+.acc-color-1 {
+    color: var(--accent-color-1);
+    background-color: var(--accent-color-1);
+}
+
+.acc-color-2 {
+    color: var(--accent-color-2);
+    background-color: var(--accent-color-2);
+}
