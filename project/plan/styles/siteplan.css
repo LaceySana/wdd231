@@ -67,8 +67,9 @@ section {
 }
 
 .color-prev {
-    /* content: "⬛"; */
-    outline: #000 solid 2px;
+    border: #000 solid 2px;
+    width: 20px;
+    height: 20px;
 }
 
 .prim-color {
