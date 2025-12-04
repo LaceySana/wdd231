@@ -25,7 +25,7 @@ main {
 }
 
 main > *:not(.hero) {
-    margin: 2rem;
+    margin: 2rem 1.5rem;
 }
 
 header,
@@ -49,6 +49,10 @@ header {
     justify-content: center;
     align-items: center;
     border-bottom: var(--secondary-color) solid 1px;
+}
+
+button, a {
+    cursor: pointer;
 }
 
 /* || HAMBURGER BUTTON || */
@@ -417,6 +421,104 @@ header {
     border: none;
     background-color: inherit;
 }
+
+/* || DISCOVER PAGE || */
+
+#allplaces div {
+    margin: 1rem auto;
+    border: var(--secondary-color) 2px solid;
+    border-radius: 10px;
+    overflow: clip;
+    background-color: var(--primary-color);
+    z-index: 1;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "image"
+    "desc"
+    "location";
+}
+
+#allplaces div img {
+    width: 100%;
+    grid-area: image;
+    align-self: end;
+    z-index: 2;
+}
+
+#allplaces div h2 {
+    margin: 1rem;
+    grid-area: name;
+    z-index: 3;
+}
+
+#allplaces div p {
+    margin: 1rem;
+    grid-area: desc;
+    z-index: 3;
+}
+
+#allplaces div address {
+    margin: 1rem;
+    grid-area: location;
+    z-index: 3;
+}
+
+#allplaces div button {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto 1rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: var(--accent-color-1) 5px solid;
+    border-radius: 10px;
+}
+
+/* || Days Since Visit || */
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#welcome {
+    width: 258px;
+    height: 179px;
+    position: absolute;
+    top: 90px;
+    left: 5%;
+    text-align: center;
+    font-weight: bold;
+    padding: 90px 1rem 1px;
+    background-color: var(--accent-color-2);
+    border: var(--secondary-color) 3px solid;
+    border-radius: 0 10px 10px;
+
+    animation: fade-in 0.7s ease;
+
+    mask-image: url(../images/speach-bubble.svg);
+    mask-size: 98%;
+    mask-repeat: no-repeat;
+    mask-position: 2px 2px;
+}
+
+#welcome button {
+    /* border: transparent solid; */
+    border-radius: 100%;
+    background-color: var(--accent-color-1);
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    bottom: 1.5px;
+    right: 1px;
+}
+
+
 
 /* || FOOTER || */
 

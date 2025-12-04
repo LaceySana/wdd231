@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vernal City CoC - Member Directory</title>
+    <title>Vernal City CoC - Discover</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <meta name="description"
         content="Discover Vernal's local businesses. View snapshots with essential information of all your go-to companies.">
     <meta name="author" content="Lacey Sanabria">
-    <meta property="og:title" content="Vernal City CoC - Member Directory">
+    <meta property="og:title" content="Vernal City CoC - Discover">
     <meta property="og:description"
         content="Discover Vernal's local businesses. View snapshots with essential information of all your go-to companies.">
     <meta property="og:image" content="https://laceysana.github.io/wdd231/chamber/images/directory-ss.PNG">
     <meta property="og:url" content="https://laceysana.github.io/wdd231/chamber/directory.html">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script type="module" src="scripts/directory.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,18 +34,16 @@
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="current"><a href='directory.html'>Directory</a></li>
+                <li><a href='directory.html'>Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li class="current"><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="button-div">
-            <button id="grid-btn" class="view-swap" title="Grid View">Grid View</button>
-            <button id="list-btn" class="view-swap" title="List View">List View</button>
-        </div>
-        <div id="members" class="grid"></div>
+        <dialog id="welcome"><div class="bubble"></div></dialog>
+        <div id="allplaces"></div>
+        <div id="last-visit"></div>
     </main>
     <footer>
         <div id="contact">

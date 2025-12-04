@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 38rem) {
     header {
         grid-template-columns: 60px auto 300px;
     }
@@ -48,29 +48,17 @@
         flex-direction: row;
     }
 
-    #allplaces {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0 1rem;
+    #allplaces div {
+        grid-template-areas: 
+        "name name"
+        "image desc"
+        "image location";
     }
 
     #allplaces div img {
-        scale: 100%;
-        translate: 0 0;
-        /* --position: 0%;
-        --size: 40%;
-        mask-image: linear-gradient(to left, transparent var(--position), black calc(var(--position) - var(--size))); */
+        width: 300px;
     }
-    
-    #allplaces div img:hover {
-        scale: 105% 110%;
-        translate: 7px -10px;
-        /* --position: calc(100 + var(--size)); */
-        transition: 
-        translate 1s ease-in-out,
-        scale 1s ease-in-out;
-    }
-    
+
     footer {
         flex-direction: row;
     }
