@@ -437,7 +437,8 @@ button, a {
     "name"
     "image"
     "desc"
-    "location";
+    "location"
+    "learn";
 }
 
 #allplaces div img {
@@ -466,9 +467,10 @@ button, a {
 }
 
 #allplaces div button {
-    width: 200px;
+    grid-area: learn;
+    width: 90%;
     height: 50px;
-    margin: 0 auto 1rem;
+    margin: 0 5% 1rem;
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border: var(--accent-color-1) 5px solid;
