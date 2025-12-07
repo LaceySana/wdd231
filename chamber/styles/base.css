@@ -375,10 +375,6 @@ button, a {
     
 }
 
-.member-level * {
-    justify-self: center;
-}
-
 .member-level button {
     margin: 10px;
     padding: 10px;
