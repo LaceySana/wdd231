@@ -17,16 +17,17 @@ const courses = getData(displayCourses);
 
 
 function displayCourses(courses) {
-    const singingCourses = courses.filter((course) => course.subject == "Singing");
-    const pianoCourses = courses.filter((course) => course.subject == "Piano");
-    const violinCourses = courses.filter((course) => course.subject == "Violin");
-    const guitarCourses = courses.filter((course) => course.subject == "Guitar");
-    const drumCourses = courses.filter((course) => course.subject == "Drum Set");
+    // const singingCourses = courses.filter((course) => course.subject == "Singing");
+    // const pianoCourses = courses.filter((course) => course.subject == "Piano");
+    // const violinCourses = courses.filter((course) => course.subject == "Violin");
+    // const guitarCourses = courses.filter((course) => course.subject == "Guitar");
+    // const drumCourses = courses.filter((course) => course.subject == "Drum Set");
 
     courses.forEach(course => {
         document.querySelector("#course-list").innerHTML += `
         <section>
-            <h2>${course.level} ${course.subject}</h2>
+            <h2>${course.subject}</h2>
+            <h3>${course.level}</h3>
             <p><strong>${course.description}</strong></p>
             <p><strong>$${course.cost}</strong></p>
         </section>
