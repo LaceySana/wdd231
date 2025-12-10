@@ -8,6 +8,8 @@
     --font-tapestry: "Tapestry", serif;
 }
 
+/* || SITE WIDE || */
+
 body {
     font-family: var(--font-tapestry);
 }
@@ -40,6 +42,10 @@ li {
     list-style-type: "♪ ";
 }
 
+button, a {
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -51,4 +57,112 @@ section {
     background-color: var(--accent-color-2);
     padding: .5rem 1rem;
     margin: 1rem;
+}
+
+/* || HEADER || */
+
+header {
+    display: grid;
+    grid-template-areas: 
+    "title logo"
+    "title btn";
+    align-items: center;
+}
+
+header h1 {
+    grid-area: title;
+    justify-self: center;
+}
+
+header img {
+    grid-area: logo;
+    justify-self: center;
+}
+
+/* || NAVIGATION || */
+
+#nav-bar {
+    display: none;
+}
+
+#nav-bar.open {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.navigation li {
+    list-style-type: none;
+    padding: 13px;
+}
+
+.current::before {
+    content: "🎼";
+}
+
+/* || HAMBURGER BUTTON || */
+
+.hamburger {
+    width: 44px;
+    height: 44px;
+    font-size: xx-large;
+    background-color: inherit;
+    border: none;
+    color: var(--secondary-color);
+    grid-area: btn;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.open::before {
+    content: "\00D7";
+}
+
+/* || FORM || */
+
+input {
+    display: block;
+    padding: 4px;
+    margin: 0 auto .5rem 1rem;
+}
+
+input[type="radio"] {
+    display: inline;
+}
+
+input:required {
+    border-left: red 5px solid;
+}
+
+input:required:valid {
+    border-left: green 5px solid;
+}
+
+
+/* || FOOTER || */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 75px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    padding: .2rem;
+}
+
+#social {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin: auto;
 }

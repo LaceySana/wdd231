@@ -1,0 +1,31 @@
+@media only screen and (min-width: 600px) {
+
+    header {
+        grid-template-areas: 
+        "title logo"
+        "nav nav";
+    }
+
+    #nav-bar {
+        display: block;
+        grid-area: nav;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+    }
+
+    #ham-btn {
+        display: none;
+    }
+
+    #course-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+
+
+    footer {
+        flex-direction: row;
+    }
+}

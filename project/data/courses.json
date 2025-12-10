@@ -1,0 +1,107 @@
+[
+    {
+        "subject": "Singing",
+        "level": "Beginner",
+        "cost": 150,
+        "description": "Learn the basics of vocal technique, breathing, and pitch control.",
+        "image_url": ""
+    },
+    {
+        "subject": "Singing",
+        "level": "Intermediate",
+        "cost": 250,
+        "description": "Improve tone, expand vocal range, and master simple harmonies.",
+        "image_url": ""
+    },
+    {
+        "subject": "Singing",
+        "level": "Advanced",
+        "cost": 400,
+        "description": "Focus on performance, advanced vocal agility, and stage presence.",
+        "image_url": ""
+    },
+    {
+        "subject": "Piano",
+        "level": "Beginner",
+        "cost": 180,
+        "description": "Introduction to keys, scales, and simple melodies.",
+        "image_url": ""
+    },
+    {
+        "subject": "Piano",
+        "level": "Intermediate",
+        "cost": 300,
+        "description": "Learn chord progressions, sight-reading, and dynamic control.",
+        "image_url": ""
+    },
+    {
+        "subject": "Piano",
+        "level": "Advanced",
+        "cost": 450,
+        "description": "Master complex pieces, improvisation, and performance techniques.",
+        "image_url": ""
+    },
+    {
+        "subject": "Violin",
+        "level": "Beginner",
+        "cost": 160,
+        "description": "Learn posture, bowing, and basic finger placement.",
+        "image_url": ""
+    },
+    {
+        "subject": "Violin",
+        "level": "Intermediate",
+        "cost": 280,
+        "description": "Develop vibrato, shifting positions, and ensemble playing.",
+        "image_url": ""
+    },
+    {
+        "subject": "Violin",
+        "level": "Advanced",
+        "cost": 420,
+        "description": "Focus on advanced techniques, concert repertoire, and expression.",
+        "image_url": ""
+    },
+    {
+        "subject": "Guitar",
+        "level": "Beginner",
+        "cost": 150,
+        "description": "Learn basic chords, strumming patterns, and simple songs.",
+        "image_url": ""
+    },
+    {
+        "subject": "Guitar",
+        "level": "Intermediate",
+        "cost": 270,
+        "description": "Explore fingerpicking, barre chords, and rhythm techniques.",
+        "image_url": ""
+    },
+    {
+        "subject": "Guitar",
+        "level": "Advanced",
+        "cost": 400,
+        "description": "Master soloing, improvisation, and advanced styles.",
+        "image_url": ""
+    },
+    {
+        "subject": "Drums",
+        "level": "Beginner",
+        "cost": 140,
+        "description": "Learn basic beats, timing, and coordination.",
+        "image_url": ""
+    },
+    {
+        "subject": "Drums",
+        "level": "Intermediate",
+        "cost": 260,
+        "description": "Develop fills, syncopation, and dynamic control.",
+        "image_url": ""
+    },
+    {
+        "subject": "Drums",
+        "level": "Advanced",
+        "cost": 390,
+        "description": "Focus on complex rhythms, polyrhythms, and performance skills.",
+        "image_url": ""
+    }
+]

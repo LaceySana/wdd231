@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crescendo Studios | Sign Up</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Sign up for a course here!">
+    <meta name="author" content="Lacey Sanabria">
+    <meta property="og:title" content="Crescendo Studios | Sign Up">
+    <meta property="og:description" content="Sign up for a course here!">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://laceysana.github.io/">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script type="module" src="scripts/signup.js"></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Crescendo Studios</h1>
+        <img src="http://placehold.co/50" alt="Crescendo Studios Logo">
+        <button id="ham-btn" class="hamburger"></button>
+        <nav id='nav-bar' class='navigation'>
+            <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='courses.html'>Courses</a></li>
+                <li class='current'><a href='signup.html'>Sign Up</a></li>
+                <li><a href='about.html'>About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button id="which-courses">Which courses have I already taken?</button>
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>
+                    <h2>Which course would you like to take?</h2>
+                </legend>
+                <label>Subject:
+                    <select name="subject" id="subject" title="Please select the subject you want to learn." required>
+                        <option value="" selected disabled> -- Please Select -- </option>
+                        <option value="singing">Singing</option>
+                        <option value="piano">Piano</option>
+                        <option value="violin">Violin</option>
+                        <option value="guitar">Guitar</option>
+                        <option value="drum">Drum Set</option>
+                    </select>
+                </label>
+                <fieldset>
+                    <legend title="Your experience level.">Experience Level: </legend>
+                    <label><input type="radio" name="level" value="beginner"> Beginner</label><br>
+                    <label><input type="radio" name="level" value="intermediate"> Intermediate</label><br>
+                    <label><input type="radio" name="level" value="advanced"> Advanced</label><br>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h2>How can we contact you?</h2>
+                </legend>
+                <label>First Name: <input type="text" name="fname" title="Your first name." required></label>
+                <label>Last Name: <input type="text" name="lname" title="Your last name." required></label>
+                <label>Email: <input type="email" name="email" title="Your email address." required></label>
+                <label>Phone Number: <input type="tel" name="phone" title="Your phone number." required></label>
+            </fieldset>
+            <input type="submit" value="Sign Up for Course">
+        </form>
+        <dialog id="courses-joined"></dialog>
+    </main>
+    <footer>
+        <div id="contact">
+            <p><strong>Crescendo Studios</strong></p>
+            <p>1234 s Hwy 40<br>Vernal, UT 84078</p>
+            <p>info@crescendostudios.com</p>
+            <p>(435) 111-2340</p>
+        </div>
+        <div id="social">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="Link to Facebook."
+                    width="30"></a>
+            <a href="https://www.linkedin.com/in/lacey-sanabria" target="_blank"><img src="images/linkedin.svg"
+                    alt="Link to LinkedIn." width="30"></a>
+            <a href="https://github.com/LaceySana" target="_blank"><img src="images/github.svg" alt="Link to GitHub."
+                    width="30"></a>
+        </div>
+        <div>
+            <p>WDD231 Individual Project</p>
+            <p>Lacey Sanabria</p>
+            <p>©️ <span id="currentYear"></span> | Lacey Sanabria</p>
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
