@@ -12,11 +12,19 @@
     }
 
     .navigation ul {
+        display: flex;
         flex-direction: row;
+        justify-content: space-around;
     }
 
     #ham-btn {
         display: none;
+    }
+
+    #home {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
     }
 
     #course-list {

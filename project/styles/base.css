@@ -70,8 +70,10 @@ header {
     display: grid;
     grid-template-areas:
         "title logo"
-        "title btn";
+        "title btn"
+        "nav nav";
     align-items: center;
+    text-align: center;
 }
 
 header h1 {
@@ -88,6 +90,7 @@ header img {
 
 #nav-bar {
     display: none;
+    grid-area: nav;
 }
 
 #nav-bar.open {
@@ -95,15 +98,15 @@ header img {
 }
 
 .navigation ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    padding: 0;
+    margin: auto;
     text-align: center;
 }
 
 .navigation li {
     list-style-type: none;
     padding: 13px;
+    font-size: larger;
 }
 
 .current::before {
@@ -133,7 +136,20 @@ header img {
 
 /* || HOME || */
 
+#reviews div {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    width: 75%;
+    justify-content: left;
+    border: var(--accent-color-1) 3px solid;
+    border-radius: 20px;
+    background-color: var(--accent-color-2);
+    font-style: italic;
+}
 
+#reviews div:nth-child(odd) {
+    justify-self: right;
+}
 
 
 /* || FORM || */
@@ -164,14 +180,14 @@ input:required:valid {
     border-left: green 5px solid;
 }
 
-#which-courses {
+button {
     display: block;
     margin: auto;
     padding: .8rem;
     background-color: var(--accent-color-1);
     color: var(--accent-color-2);
     width: fit-content;
-    border: var(--accent-color-2) 5px inset;
+    border: var(--accent-color-2) 5px outset;
     border-radius: 5px;
 }
 
@@ -180,8 +196,12 @@ input[type="submit"] {
     color: var(--secondary-color);
     padding: .6rem;
     margin: .5rem;
-    border: var(--accent-color-2) 5px inset;
+    border: var(--accent-color-2) 5px outset;
     border-radius: 5px;
+}
+
+button:active, input[type="submit"]:active {
+    border-style: inset;
 }
 
 /* || MODAL || */
@@ -190,6 +210,7 @@ input[type="submit"] {
     padding: 2rem;
     width: 250px;
     background-color: var(--secondary-color);
+    border: var(--accent-color-1) 5px outset;
     border-radius: 10px;
 }
 
