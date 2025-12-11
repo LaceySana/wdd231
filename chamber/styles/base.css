@@ -498,11 +498,6 @@ button, a {
     border-radius: 0 10px 10px;
 
     animation: fade-in 0.7s ease;
-
-    /* mask-image: url(../images/speach-bubble.svg);
-    mask-size: 98%;
-    mask-repeat: no-repeat;
-    mask-position: 2px 2px; */
 }
 
 #welcome button {
