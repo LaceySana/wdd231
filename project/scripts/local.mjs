@@ -1,28 +1,3 @@
-function updateSignUps() {
-    let signUps = Number(localStorage.getItem("signUps")) || 0;
-    signUps += 1;
-    localStorage.setItem("signUps", signUps);
-    return signUps;
-}
-
-function displaySignUps() {
-    const signUps = updateSignUps();
-    const sect = document.querySelector("#sign-ups");
-    if (signUps == 1) {
-        sect.innerHTML = `
-        <section>
-            <p>This will be your first course with us. Welcome!</p>
-        </section>
-        `;
-    } else {
-        sect.innerHTML = `
-        <section>
-            <p>You've now joined ${signUps} courses with us!</p>
-        </section>
-        `;
-    }
-}
-
 function getCoursesJoined() {
     let coursesJoined = JSON.parse(localStorage.getItem("coursesJoined")) || [];
     return coursesJoined;
@@ -64,4 +39,4 @@ function createModal(courses) {
     })
 }
 
-export { displaySignUps, displayCoursesJoined, setCoursesJoined };
+export { displayCoursesJoined, setCoursesJoined };
