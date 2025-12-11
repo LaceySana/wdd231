@@ -42,7 +42,8 @@ li {
     list-style-type: "♪ ";
 }
 
-button, a {
+button,
+a {
     cursor: pointer;
 }
 
@@ -67,9 +68,9 @@ section {
 
 header {
     display: grid;
-    grid-template-areas: 
-    "title logo"
-    "title btn";
+    grid-template-areas:
+        "title logo"
+        "title btn";
     align-items: center;
 }
 
@@ -132,7 +133,7 @@ header img {
 
 /* || HOME || */
 
- 
+
 
 
 /* || FORM || */
@@ -163,11 +164,13 @@ input:required:valid {
     border-left: green 5px solid;
 }
 
-button {
+#which-courses {
+    display: block;
+    margin: auto;
+    padding: .8rem;
     background-color: var(--accent-color-1);
     color: var(--accent-color-2);
-    padding: .8rem;
-    margin-left: 42%;
+    width: fit-content;
     border: var(--accent-color-2) 5px inset;
     border-radius: 5px;
 }
